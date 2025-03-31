@@ -103,27 +103,30 @@ const config: Config = {
         srcDark: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-darkmode.png',
       },
       items: [
-     /*   {
+       {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Docs',
-        },*/
+        },
         {
           label: 'Platform', // Custom dropdown label
           position: 'right',
           items: [
             {
-              label: 'Raaghu with ABP ',
-              to: '/abp',  // Change to the respective route
+              label: 'ABP ',
+              to: '/',  // Change to the respective route
+              dropdownActiveClassDisabled: true,
             },
             {
-              label: 'Raaghu with ANZ',
+              label: ' Universal',
+              to: '/Universal',
+              dropdownActiveClassDisabled: true,
+            },
+            {
+              label: ' ANZ',
               href: 'https://github.com/utkarshanik',  // External link
-            },
-            {
-              label: 'Raaghu Universal',
-              to: '/universal',
+              dropdownActiveClassDisabled: true,
             },
           ],
         },
@@ -134,6 +137,47 @@ const config: Config = {
           dropdownItemsAfter: [{ to: '/versions',}],
           dropdownActiveClassDisabled: true,
         },
+    
+        // DROPDOWN VALUE
+        // {
+        //   label: 'Platform',
+        //   position: 'right',
+        //   items: [
+        //     {
+        //       label: 'ABP',
+        //       to: '/',
+        //       dropdownActiveClassDisabled: true,
+        //     },
+        //     {
+        //       label: 'Universal',
+        //       to: '/Universal',
+        //       dropdownActiveClassDisabled: true,
+        //     },
+        //     {
+        //       label: 'ANZ',
+        //       href: 'https://github.com/utkarshanik',
+        //       dropdownActiveClassDisabled: true,
+        //     },
+        //   ],
+        // },
+
+        // {
+        //   label: 'Custom Dropdown', // Custom label
+        //   position: 'right',
+        //   items: [
+        //     {
+        //       label: 'Option 1',
+        //       to: '/option1', // Link to Option 1
+        //     },
+        //     {
+        //       label: 'Option 2',
+        //       to: '/option2', // Link to Option 2
+        //     },
+        //   ],
+        // },
+
+       
+
       {
           type: 'localeDropdown',
           position: 'right',
